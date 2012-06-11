@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+#-*- coding: utf-8 -*-
+require 'tk'
+
+TkLabel.new(nil,
+    :text => 'Hello',
+    :fg   => 'red',
+    :bg   => 'black').pack
+
+TkButton.new(nil,
+    :text => 'Exit',
+    :command => proc{exit}).pack
+
+Tk.mainloop
